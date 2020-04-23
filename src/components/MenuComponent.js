@@ -4,7 +4,14 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
 class Menu extends Component {
 
+
+    componentDidMount() {
+        console.log('Dishdetail Component componentDidMount invoked');
+    }
+
     render() {
+
+        console.log('Menu Component render invoked');
 
         const menu = this.props.dishes.map((dish) => {
             return (
