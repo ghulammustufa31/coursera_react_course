@@ -24,6 +24,7 @@ function About(props) {
             <div key={leader.id} className="col-12 mt-5">
                 <RenderLeader leader={leader} />
             </div>
+            
         );
     });
 
