@@ -10,8 +10,6 @@ export const Comments = (state = {
 
             case ActionTypes.ADD_COMMENT:
                 var comment = action.payload;
-                comment.id = state.comments.length;
-                comment.date = new Date().toISOString();
                 // CONCAT => Creates a modified copy of the state to support immutability
                 return {...state, comments: state.comments.concat(comment)}
                 
